@@ -1,0 +1,20 @@
+# Copy or merge selected settings into ~/.codex/config.toml.
+# Keep API keys, access tokens, passwords, and machine-specific secrets out of Git.
+
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+personality = "friendly"
+web_search = "cached"
+
+# Model availability can differ by account or workspace. Set these after checking
+# the models available to the destination account.
+# model = "<available-model>"
+# model_reasoning_effort = "<supported-level>"
+
+[features]
+multi_agent = true
+# Memories are account/local-state dependent and are not transferred by this repo.
+# memories = true
+
+# Add only non-secret MCP structure here. Put credentials in the destination
+# account's secret manager or environment, never in this repository.

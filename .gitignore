@@ -1,0 +1,7 @@
+# Allowlist: keep credentials, sessions, memories, logs, and caches out of Git.
+*
+!.gitignore
+!AGENTS.md
+!README.md
+!config.toml.example
+!install.sh
