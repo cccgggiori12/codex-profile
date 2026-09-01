@@ -8,13 +8,13 @@ web_search = "cached"
 
 # Model availability can differ by account or workspace. Set these after checking
 # the models available to the destination account.
-# model = "<available-model>"
-# model_reasoning_effort = "<supported-level>"
+model = "gpt-5.6-sol"
+model_reasoning_effort = "medium"
 
 [features]
 multi_agent = true
-# Memories are account/local-state dependent and are not transferred by this repo.
-# memories = true
+memories = true
+remote_plugin = false
 
 # Add only non-secret MCP structure here. Put credentials in the destination
 # account's secret manager or environment, never in this repository.
