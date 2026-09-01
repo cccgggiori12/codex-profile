@@ -26,8 +26,8 @@
   full-filesystem event is not by itself a reason to ban `/tmp`.
 - Before creating temporary builds, environments, or extracted bundles expected to reach hundreds of
   MB or survive beyond the current task, check the destination filesystem. When appropriate, prefer
-  an explicitly named task directory under `/DATA210/Application/caolx201` and record its purpose,
-  owner, and cleanup boundary.
+  an explicitly named task directory on a filesystem with sufficient capacity, and record its
+  purpose, owner, and cleanup boundary.
 - At task completion, report owned temporary artifacts and remove only exact, verified, rebuildable
   targets when authorized. Never sweep shared `/tmp` or delete foreign-owned or ambiguous paths.
 - After a GitHub pull request is merged and closed, remind the user to return the owning worktree to its main branch and fast-forward it, while preserving any local modifications.
